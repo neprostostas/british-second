@@ -35,3 +35,36 @@ $(document).ready(function() {
     });
 
 });
+
+
+const swiper = new Swiper('.swiper', {
+    direction: 'horizontal',
+
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            slidesPerView: 1.5,
+            spaceBetween: 27,
+        },
+        // when window width is >= 320px
+        760: {
+            slidesPerView: 2.5,
+            spaceBetween: 27,
+        },
+        // when window width is >= 960px
+        960: {
+            slidesPerView: 3.5,
+            spaceBetween: 27,
+        },
+        // when window width is >= 1200px
+        1200: {
+            slidesPerView: 4.3,
+            spaceBetween: 27,
+        },
+    }
+
+});
