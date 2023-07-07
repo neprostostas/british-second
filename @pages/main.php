@@ -16,8 +16,8 @@
                 </p>
 
                 <button class="connect-manager">
-                    <img class="call-img" src="assets/images/icons/call.svg" alt="call">
-                    <img class="call-img-red" src="assets/images/icons/call-red.svg" alt="call-red">
+                    <img class="call-img" src="<?= SERVER_URL ?>assets/images/icons/call.svg" alt="call">
+                    <img class="call-img-red" src="<?= SERVER_URL ?>assets/images/icons/call-red.svg" alt="call-red">
                     Зв'язатись з менеджером
                 </button>
             </div>
@@ -45,7 +45,7 @@
         </div>
         <div class="image-block">
             <div class="black-square"></div>
-            <img src="assets/images/hero-1.png" alt="hero-1">
+            <img src="<?= SERVER_URL ?>assets/images/hero-1.png" alt="hero-1">
         </div>
     </div>
 
@@ -53,7 +53,7 @@
         <div class="margin-wrap grid-2">
             <div class="image-block">
                 <div class="black-square"></div>
-                <img src="assets/images/hero-2.png" alt="hero-2">
+                <img src="<?= SERVER_URL ?>assets/images/hero-2.png" alt="hero-2">
             </div>
 
             <div class="reputation-block">
@@ -90,7 +90,7 @@
                 </button>
             </div>
             <div class="viber-image">
-                <img src="assets/images/viber-1.png" alt="viber-1">
+                <img src="<?= SERVER_URL ?>assets/images/viber-1.png" alt="viber-1">
                 <hr class="black medium">
                 <hr class="black thin">
             </div>
@@ -101,7 +101,7 @@
         <div class="cooperation-section">
             <div class="top-block">
                 <h2>Оберіть необхідний вам варіант співпраці</h2>
-                <img class="left-corner-img" src="assets/images/icons/left-corner.svg" alt="left-corner">
+                <img class="left-corner-img" src="<?= SERVER_URL ?>assets/images/icons/left-corner.svg" alt="left-corner">
             </div>
             <div class="original-block">
                 <div class="box box1">
@@ -114,10 +114,10 @@
                     <hr class="silver first">
 
                     <div class="logos-wrap">
-                        <img src="assets/images/icons/nike.svg" alt="nike">
-                        <img src="assets/images/icons/puma.svg" alt="puma">
-                        <img src="assets/images/icons/adidas.svg" alt="adidas">
-                        <img src="assets/images/icons/reebok.svg" alt="reebok">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/nike.svg" alt="nike">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/puma.svg" alt="puma">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/adidas.svg" alt="adidas">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/reebok.svg" alt="reebok">
                     </div>
 
                     <hr class="silver second">
@@ -146,10 +146,10 @@
                     <hr class="silver first">
 
                     <div class="logos-wrap">
-                        <img src="assets/images/icons/nike.svg" alt="nike">
-                        <img src="assets/images/icons/puma.svg" alt="puma">
-                        <img src="assets/images/icons/adidas.svg" alt="adidas">
-                        <img src="assets/images/icons/reebok.svg" alt="reebok">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/nike.svg" alt="nike">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/puma.svg" alt="puma">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/adidas.svg" alt="adidas">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/reebok.svg" alt="reebok">
                     </div>
 
                     <hr class="silver second">
@@ -198,11 +198,11 @@
 
             <div class="support-block">
 
-                <img class="hero-flag" src="assets/images/hero-flag.png" alt="hero-flag">
+                <img class="hero-flag" src="<?= SERVER_URL ?>assets/images/hero-flag.png" alt="hero-flag">
 
                 <div class="support-line">
-                    <img class="support-img" src="assets/images/icons/support.svg" alt="support">
-                    <img class="support-white-img" src="assets/images/icons/support-white.svg" alt="support-white">
+                    <img class="support-img" src="<?= SERVER_URL ?>assets/images/icons/support.svg" alt="support">
+                    <img class="support-white-img" src="<?= SERVER_URL ?>assets/images/icons/support-white.svg" alt="support-white">
                     <h2>Нова послуга BritishSecond - клієнтський супровід</h2>
                 </div>
 
@@ -297,7 +297,7 @@
                     </div>
 
                     <div class="image-part">
-                        <img src="assets/images/top-1.png" alt="top-1">
+                        <img src="<?= SERVER_URL ?>assets/images/top-1.png" alt="top-1">
                     </div>
 
                 </div>
@@ -324,7 +324,7 @@
                     </div>
 
                     <div class="image-part">
-                        <img src="assets/images/top-2.png" alt="top-2">
+                        <img src="<?= SERVER_URL ?>assets/images/top-2.png" alt="top-2">
                     </div>
 
                 </div>
@@ -348,7 +348,7 @@
                     </div>
 
                     <div class="image-part">
-                        <img src="assets/images/top-3.png" alt="top-3">
+                        <img src="<?= SERVER_URL ?>assets/images/top-3.png" alt="top-3">
                     </div>
 
                 </div>
@@ -375,7 +375,7 @@
                     </div>
 
                     <div class="image-part">
-                        <img src="assets/images/top-4.png" alt="top-4">
+                        <img src="<?= SERVER_URL ?>assets/images/top-4.png" alt="top-4">
                     </div>
 
                 </div>
@@ -386,7 +386,7 @@
                     <div class="comparison-block">
 
                         <div class="product">
-                            <img src="assets/images/comparison-1.png" alt="comparison-1">
+                            <img src="<?= SERVER_URL ?>assets/images/comparison-1.png" alt="comparison-1">
                             <p>British Second</p>
                             <h3 class="white">~ <span>1.5</span> грн/км</h3>
                         </div>
@@ -394,7 +394,7 @@
                         <hr class="grey">
 
                         <div class="product">
-                            <img src="assets/images/comparison-2.png" alt="comparison-2">
+                            <img src="<?= SERVER_URL ?>assets/images/comparison-2.png" alt="comparison-2">
                             <p>Meest Express</p>
                             <h3>~ <span>4</span> грн/км</h3>
                         </div>
@@ -402,7 +402,7 @@
                         <hr class="grey">
 
                         <div class="product">
-                            <img src="assets/images/comparison-3.png" alt="comparison-3">
+                            <img src="<?= SERVER_URL ?>assets/images/comparison-3.png" alt="comparison-3">
                             <p>Нова Пошта</p>
                             <h3>~ <span>6</span> грн/км</h3>
                         </div>
@@ -430,7 +430,7 @@
                     </div>
 
                     <div class="image-part">
-                        <img src="assets/images/top-5.png" alt="top-5">
+                        <img src="<?= SERVER_URL ?>assets/images/top-5.png" alt="top-5">
                     </div>
 
 
@@ -488,7 +488,7 @@
 
                 <div class="grid-map">
 
-                    <img src="assets/images/map.png" alt="map">
+                    <img src="<?= SERVER_URL ?>assets/images/map.png" alt="map">
 
                     <div class="text-block">
                         <h4>міста України:</h4>
@@ -550,7 +550,7 @@
 
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="assets/images/team-1.png" alt="team-1">
+                        <img src="<?= SERVER_URL ?>assets/images/team-1.png" alt="team-1">
 
                         <div class="text-part">
                             <hr class="orange">
@@ -564,7 +564,7 @@
 
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/team-2.png" alt="team-2">
+                        <img src="<?= SERVER_URL ?>assets/images/team-2.png" alt="team-2">
 
                         <div class="text-part">
                             <hr class="orange">
@@ -578,7 +578,7 @@
 
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/team-3.png" alt="team-3">
+                        <img src="<?= SERVER_URL ?>assets/images/team-3.png" alt="team-3">
 
                         <div class="text-part">
                             <hr class="orange">
@@ -592,7 +592,7 @@
 
                     </div>
                     <div class="swiper-slide">
-                        <img src="assets/images/team-4.png" alt="team-4">
+                        <img src="<?= SERVER_URL ?>assets/images/team-4.png" alt="team-4">
 
                         <div class="text-part">
                             <hr class="orange">
@@ -631,18 +631,18 @@
                     </p>
 
                     <button class="connect-manager">
-                        <img class="call-img" src="assets/images/icons/call.svg" alt="call">
-                        <img class="call-img-red" src="assets/images/icons/call-red.svg" alt="call-red">
+                        <img class="call-img" src="<?= SERVER_URL ?>assets/images/icons/call.svg" alt="call">
+                        <img class="call-img-red" src="<?= SERVER_URL ?>assets/images/icons/call-red.svg" alt="call-red">
                         Зв'язатись з менеджером
                     </button>
                 </div>
                 <div class="right-part">
                     <div class="flag-wrap">
-                        <img src="assets/images/icons/flag-1.svg" alt="flag-1">
-                        <img src="assets/images/icons/flag-2.svg" alt="flag-2">
-                        <img src="assets/images/icons/flag-3.svg" alt="flag-3">
-                        <img src="assets/images/icons/flag-4.svg" alt="flag-4">
-                        <img src="assets/images/icons/flag-5.svg" alt="flag-5">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/flag-1.svg" alt="flag-1">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/flag-2.svg" alt="flag-2">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/flag-3.svg" alt="flag-3">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/flag-4.svg" alt="flag-4">
+                        <img src="<?= SERVER_URL ?>assets/images/icons/flag-5.svg" alt="flag-5">
                     </div>
                 </div>
 
