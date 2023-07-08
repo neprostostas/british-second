@@ -6,8 +6,11 @@
             <div class="info-container">
                 <div class="info-content">
                     <div class="main-header">
-                        <img class="logo-part" src="<?= SERVER_URL ?>assets/images/icons/logo.svg" alt="logo">
-                        <img class="logo-part-mobile" src="<?= SERVER_URL ?>assets/images/icons/logo-mobile.svg" alt="logo-mobile">
+
+                        <a href="<?= SERVER_URL ?>">
+                            <img class="logo-part" src="<?= SERVER_URL ?>assets/images/icons/logo.svg" alt="logo">
+                            <img class="logo-part-mobile" src="<?= SERVER_URL ?>assets/images/icons/logo-mobile.svg" alt="logo-mobile">
+                        </a>
 
                         <div class="func-part">
                             <div class="top-section">
@@ -49,13 +52,41 @@
                             </div>
                             <nav class="bottom-section">
                                 <ul class="nav-ul">
-                                    <li>Головна</li>
-                                    <li>Оригінал</li>
-                                    <li>Сортовка</li>
-                                    <li>Клієнтський супровід</li>
-                                    <li>Блог</li>
-                                    <li>Про нас</li>
-                                    <li>Контакти</li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>">
+                                            Головна
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>original">
+                                            Оригінал
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>sort">
+                                            Сортовка
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>support">
+                                            Клієнтський супровід
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>blog">
+                                            Блог
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>about-us">
+                                            Про нас
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?= SERVER_URL ?>contacts">
+                                            Контакти
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
@@ -70,41 +101,75 @@
             <div class="mega-menu">
                 <nav class="bottom-section-mobile">
                     <ul class="nav-ul-mobile">
-                        <li>Головна</li>
-                        <li>Оригінал</li>
-                        <li>Сортовка</li>
-                        <li>Клієнтський супровід</li>
-                        <li>Блог</li>
-                        <li>Про нас</li>
-                        <li>Контакти</li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>">
+                                Головна
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>original">
+                                Оригінал
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>sort">
+                                Сортовка
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>support">
+                                Клієнтський супровід
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>blog">
+                                Блог
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>about-us">
+                                Про нас
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?= SERVER_URL ?>contacts">
+                                Контакти
+                            </a>
+                        </li>
                     </ul>
                     <ul class="catalog-ul-mobile">
                         <li>Каталог товарів</li>
                         <li>
-                            <div>
-                                <img src="<?= SERVER_URL ?>assets/images/icons/winter.svg" alt="winter">
-                                <p>ЗИМА <span>(123)</span></p>
-                            </div>
+                            <a href="<?= SERVER_URL ?>">
+                                <div>
+                                    <img src="<?= SERVER_URL ?>assets/images/icons/winter.svg" alt="winter">
+                                    <p>ЗИМА <span>(123)</span></p>
+                                </div>
+                            </a>
                         </li>
                         <li>
-                            <div>
-                                <img src="<?= SERVER_URL ?>assets/images/icons/spring.svg" alt="spring">
-                                <p>ВЕСНА <span>(83)</span></p>
-                            </div>
+                            <a href="<?= SERVER_URL ?>">
+                                <div>
+                                    <img src="<?= SERVER_URL ?>assets/images/icons/spring.svg" alt="spring">
+                                    <p>ВЕСНА <span>(83)</span></p>
+                                </div>
+                            </a>
                         </li>
-
                         <li>
-                            <div>
-                                <img src="<?= SERVER_URL ?>assets/images/icons/summer.svg" alt="summer">
-                                 <p>ЛІТО <span>(63)</span></p>
-                            </div>
+                            <a href="<?= SERVER_URL ?>">
+                                <div>
+                                    <img src="<?= SERVER_URL ?>assets/images/icons/summer.svg" alt="summer">
+                                    <p>ЛІТО <span>(63)</span></p>
+                                </div>
+                            </a>
                         </li>
-
                         <li>
-                            <div>
-                                <img src="<?= SERVER_URL ?>assets/images/icons/autumn.svg" alt="autumn">
-                                <p>ОСІНЬ <span>(853)</span></p>
-                            </div>
+                            <a href="<?= SERVER_URL ?>">
+                                <div>
+                                    <img src="<?= SERVER_URL ?>assets/images/icons/autumn.svg" alt="autumn">
+                                    <p>ОСІНЬ <span>(853)</span></p>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                     <button class="connect-button">
@@ -115,22 +180,22 @@
 
             <div class="catalog-container">
                 <nav class="catalog-content">
-                    <div class="season winter">
+                    <a href="<?= SERVER_URL ?>" class="season winter">
                         <img src="<?= SERVER_URL ?>assets/images/icons/winter.svg" alt="winter">
                         <p>Зима</p>
-                    </div>
-                    <div class="season spring">
+                    </a>
+                    <a href="<?= SERVER_URL ?>" class="season spring">
                         <img src="<?= SERVER_URL ?>assets/images/icons/spring.svg" alt="spring">
                         <p>Весна</p>
-                    </div>
-                    <div class="season summer">
+                    </a>
+                    <a href="<?= SERVER_URL ?>" class="season summer">
                         <img src="<?= SERVER_URL ?>assets/images/icons/summer.svg" alt="summer">
                         <p>Літо</p>
-                    </div>
-                    <div class="season autumn">
+                    </a>
+                    <a href="<?= SERVER_URL ?>" class="season autumn">
                         <img src="<?= SERVER_URL ?>assets/images/icons/autumn.svg" alt="autumn">
                         <p>Осінь</p>
-                    </div>
+                    </a>
 
 
                     <label for="site-search-mobile"></label>
