@@ -1,7 +1,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
 
-<main class="main-page" style="margin-bottom: -30px;">
+<main class="main-page">
     <div class="hero-section main">
 
         <div class="hero-wrapper">
