@@ -1,6 +1,6 @@
 <?php
 
-$server_url = $_SERVER["SERVER_NAME"];
+$server_url = 'http://' . $_SERVER["SERVER_NAME"];
 if($_SERVER["SERVER_NAME"] == 'localhost') {
     $server_url = 'http://localhost';
     $REQUEST_URI = explode('/', $_SERVER["REQUEST_URI"]);
