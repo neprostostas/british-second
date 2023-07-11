@@ -598,12 +598,12 @@ header a {
 
 /* MAIN */
 
-:is(.hero-section.main, .hero-section.support) {
+:is(.hero-section.main, .hero-section.support, .hero-section.sort) {
     position: relative;
     z-index: 2;
 }
 
-:is(.hero-image.main, .hero-image.support) {
+:is(.hero-image.main, .hero-image.support, .hero-image.sort) {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
@@ -620,7 +620,11 @@ header a {
     background-image: url("../assets/images/support/hero-support.png");
 }
 
-:is(.hero-text.main, .hero-text.support) {
+.hero-image.sort {
+    background-image: url("../assets/images/sort/hero-sort.png");
+}
+
+:is(.hero-text.main, .hero-text.support, .hero-text.sort) {
     position: absolute;
     left: 50%;
     top: 55%;
@@ -629,11 +633,7 @@ header a {
     width: 662px;
 }
 
-.hero-text.support {
-    width: 820px;
-}
-
-:is(.hero-section.main h1, .hero-section.main h2, .hero-section.support h2) {
+:is(.hero-section.main h1, .hero-section.main h2, .hero-section.support h2, .hero-section.sort h2) {
     margin: 0;
     color: var(--color-bg);
     text-align: center;
@@ -645,7 +645,7 @@ header a {
     text-transform: uppercase;
 }
 
-:is(.hero-section.main p, .hero-section.support p) {
+:is(.hero-section.main p, .hero-section.support p, .hero-section.sort p) {
     padding: 10px 0 47px;
     margin: 0 auto;
     max-width: 465px;
@@ -658,12 +658,20 @@ header a {
     letter-spacing: 2px;
 }
 
+.hero-text.support {
+    width: 820px;
+}
+
 .hero-section.support p {
     max-width: 735px;
     padding: 30px 0 40px;
 }
 
-.hero-section.support .know-more {
+.hero-text.sort p {
+    max-width: 765px;
+}
+
+.hero-section.support .know-more, .hero-section.sort .catalog {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, auto);
@@ -2249,6 +2257,17 @@ hr.white.medium {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 .placeholder {
     height: 1000px;
 }
@@ -2913,6 +2932,22 @@ hr.white.medium {
 
 @media (max-width: 760px) {
 
+    .hero-section.sort h2 {
+        font-size: 40px;
+        max-width: 360px;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .hero-text.sort p {
+        max-width: 350px;
+        text-align: left;
+    }
+
+    .hero-section.sort .catalog {
+        width: 350px;
+    }
+
     .testimonials-section h2 {
         text-align: left;
         max-width: 395px;
@@ -2981,6 +3016,14 @@ hr.white.medium {
     .cooperation-section .box p {
         padding-bottom: 30px;
         max-width: 350px;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .hero-text.sort {
+        width: unset;
     }
 
 }
@@ -3182,6 +3225,14 @@ hr.white.medium {
 
     .hero-text.main {
         width: 310px;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .hero-section.sort .catalog {
+        width: 300px;
     }
 
 }
