@@ -2252,6 +2252,174 @@ hr.white.medium {
     border-bottom: unset;
 }
 
+.opens-section {
+    background: #F8F8F8;
+    padding: 80px 25px 50px;
+}
+
+.opens-section .top-line {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 25px;
+}
+
+.opens-section .top-line hr {
+    height: 1px;
+    width: 100%;
+}
+
+.opens-section .top-line hr.mobile {
+    display: none;
+}
+
+.opens-section h2 {
+    text-align: left;
+    color: var(--color-black);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.opens-section p {
+    text-align: left;
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sorted-section {
+    padding: 0 80px 60px;
+}
+
+.sorted-section .top-line hr {
+    margin: 10px 0;
+    width: 34px;
+    height: 9px;
+}
+
+.sorted-section .top-line p.bold {
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.sorted-section .block-content p.text {
+    max-width: 395px;
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal
+}
+
+.sorted-section .block-content {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.sorted-section .block-content .cards-block {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 17px;
+}
+
+.sorted-section .block-content .cards-block .card-box.two {
+    top: 30px;
+}
+
+.sorted-section .block-content .cards-block .card-box.three {
+    top: 60px;
+}
+
+.sorted-section .block-content .cards-block .card-box {
+    position: relative;
+    padding: 15px 30px 25px;
+    background: var(--color-orange);
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.sorted-section .block-content .cards-block .card-box.one {
+    border-radius: 40px 0 0 0;
+}
+
+.sorted-section .block-content .cards-block .card-box.two {
+    border-radius: 0;
+}
+
+.sorted-section .block-content .cards-block .card-box.three {
+    border-radius: 0 40px 0 0;
+}
+
+.sorted-section .block-content .cards-block .card-box h2.code {
+    text-align: center;
+    color: var(--color-black);
+    opacity: 0.1;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sorted-section .block-content .cards-block .card-box p {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sorted-section .last-line p.bold {
+    max-width: 540px;
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sorted-section .block-content .cards-block .card-box hr {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 9px;
+    height: 34px;
+}
+
+.sorted-section .last-line {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 25px;
+    align-items: center;
+    justify-content: start;
+}
+
+.sorted-section .last-line hr {
+    width: 8px;
+    height: 45px;
+}
+
+
+
+
+
+
 
 
 
@@ -2524,6 +2692,72 @@ hr.white.medium {
 
 @media (max-width: 920px) {
 
+    .sorted-section .block-content {
+        margin-top: 30px;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-content: unset;
+    }
+
+    .sorted-section .block-content .cards-block .card-box {
+        padding: 30px 52px
+    }
+
+    .sorted-section .block-content .cards-block .card-box p {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .sorted-section .block-content .cards-block .card-box.one hr {
+        bottom: 0;
+        left: 0;
+    }
+
+    .sorted-section .block-content .cards-block .card-box.three hr {
+        top: 0;
+        left: 0;
+    }
+
+    .sorted-section .block-content .cards-block .card-box h2.code {
+        text-align: unset;
+        position: absolute;
+        top: -20px;
+    }
+
+    .sorted-section .block-content .cards-block .card-box.one h2.code {
+        right: -17px;
+    }
+
+    .sorted-section .top-line hr {
+        background-color: #DF042A;
+    }
+
+    .sorted-section .last-line hr {
+        background-color: var(--color-orange);
+    }
+
+    .sorted-section .block-content .cards-block .card-box.two h2.code {
+        left: 0;
+    }
+
+    .sorted-section .block-content .cards-block .card-box.three h2.code {
+        right: 0;
+    }
+
+    .sorted-section .block-content .cards-block {
+        position: unset;
+        grid-template-columns: auto;
+        gap: 25px;
+    }
+
+    .sorted-section .block-content .cards-block :is(.card-box.two, .card-box.three) {
+        top: 0;
+    }
+
+    .sorted-section .block-content .cards-block .card-box.three {
+        border-radius: 0 0 0 40px;
+    }
+
     .decision-section .button-line {
         margin: 95px 40px;
     }
@@ -2571,7 +2805,6 @@ hr.white.medium {
     .concurrent-section .concurrent-wrap .concurrent-block .bg-mobile-wrap {
         grid-template-columns: auto;
         gap: 0;
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -2667,7 +2900,6 @@ hr.white.medium {
     .advantages-section .adv-container .adv-block h3.code {
         font-size: 96px;
     }
-
 
     .advantages-section .adv-container .adv-block h2.code.one {
         right: unset;
@@ -3060,6 +3292,19 @@ hr.white.medium {
 }
 
 @media (max-width: 570px) {
+
+    .sorted-section {
+        padding: 0 40px 40px;
+    }
+
+    .opens-section h2 {
+        font-size: 33px;
+    }
+
+    .opens-section p {
+        font-size: 21px;
+    }
+
     .viber-block h2 {
         font-size: 35px;
     }
@@ -3230,6 +3475,10 @@ hr.white.medium {
 }
 
 @media (max-width: 430px) {
+
+    .sorted-section {
+        padding: 0 25px 25px;
+    }
 
     .hero-section.sort .catalog {
         width: 300px;

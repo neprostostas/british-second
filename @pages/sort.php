@@ -57,4 +57,72 @@
 
     </div>
 
+    <div class="container">
+
+        <div class="sorted-section">
+
+            <div class="top-line">
+
+                <hr class="black">
+
+                <p class="bold">Сортований секонд-хенд - може стати або чудовим вибором для збільшення прибутковості вашого магазину, або стати статтею витрат і неліквідними залишками на складі. </p>
+
+            </div>
+
+            <div class="block-content">
+
+                <p class="text">У спілкуванні з нашими клієнтами, як діючими, так і тими, що приходять вперше, ми виявили декілька розповсюджених проблем, пов’язаних з сортовкою:</p>
+
+                <div class="cards-block">
+
+                    <div class="card-box one">
+
+                        <h2 class="code">1</h2>
+
+                        <p>Постачальник працює з фабрикою, яка фокусується на якості товару нижче середньої</p>
+
+                        <hr class="black">
+
+                    </div>
+
+                    <div class="card-box two">
+
+                        <h2 class="code">2</h2>
+
+                        <p>Відсутність перевірки товару на фабриці та на складі</p>
+
+                        <hr class="black">
+
+                    </div>
+
+                    <div class="card-box three">
+
+                        <h2 class="code">3</h2>
+
+                        <p>Сплата авансового платежу при доставці поштовим перевізником</p>
+
+                        <hr class="black">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="last-line">
+
+                <hr class="black">
+
+                <p class="bold">Все це призводить до того, що ви отримуєте товар, який потім складно продати</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <?php require "@commons/viber-section.php"; ?>
+
+
+
 </main>
