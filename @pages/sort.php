@@ -303,6 +303,118 @@
 
     </div>
 
+    <div class="container">
+        <div class="special-section">
 
+            <h2>Також у нас постійні акції та товари спеціального призначення</h2>
+
+            <div class="media-part">
+
+                <div class="media-box one">
+
+                    <div class="hover-wrap">
+                        <h3>Акції</h3>
+                        <hr class="orange">
+                    </div>
+
+                </div>
+
+                <div class="media-box two">
+
+                    <div class="hover-wrap">
+                        <h3>Спеціалізовані категорії</h3>
+                        <hr class="orange">
+                    </div>
+
+                </div>
+
+                <div class="media-box three">
+
+                    <div class="hover-wrap">
+                        <h3>Товари, які найкраще продаються</h3>
+                        <hr class="orange">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="attention-section">
+
+            <h2>Кому варто звернути увагу саме на сортовку?</h2>
+
+            <div class="content-wrap">
+
+                <div class="attent-cell one black">
+
+                    <img class="attention-svg-1" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-1.svg" alt="attention-svg-1">
+                    <p>Власникам спеціалізованих магазинів, що торгують товарами певних категорій (взуття та галантерея, дитячий чи робочий одяг)</p>
+
+                </div>
+
+                <div class="attent-cell two orange">
+
+                    <img class="attention-svg-2" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-2.svg" alt="attention-svg-2">
+                    <p>Тим, хто хоче розпочати бізнес на секонд-хенді, але боїться вкладати гроші в товар, який може не продатись</p>
+
+                </div>
+
+                <div class="attent-cell three black">
+
+                    <img class="attention-svg-3" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-3.svg" alt="attention-svg-3">
+                    <img class="attention-svg-mobile-3" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-mobile-3.svg" alt="attention-svg-mobile-3">
+                    <p>Власникам невеликих магазинів, які хочуть докупити ті речі, які потрібно в даний момент, в невеликій кількості.</p>
+
+                </div>
+
+                <div class="attent-cell four orange">
+
+                    <img class="attention-svg-4" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-4.svg" alt="attention-svg-4">
+                    <img class="attention-svg-mobile-4" src="<?= SERVER_URL ?>assets/images/icons/attention-svg-mobile-4.svg" alt="attention-svg-mobile-4">
+                    <p>Власникам магазину чи мережі, які працюють з преміум-товаром чи товарами Cash4Clothes ("магазинна збірка")</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="document-section">
+
+            <div class="top-line">
+
+                <hr class="black">
+
+                <h2>Офіційно розмитнюємо та надаємо всі необхідні сертифікати</h2>
+
+            </div>
+
+            <div class="content-block">
+
+                <div class="left-part">
+
+                    <p class="padding-t">Вживаний одяг, повинен мати супровідну документацію - на кожну партію секонд-хенду країна, з якої імпортується продукція, видає документ про проведення дезінфекції, а також інші сертифікати.</p>
+                    <p class="padding-tb">Ці документи перевізник, який транспортує товар, повинен пред’явити під час проходження митного контролю.</p>
+                    <p class="padding-b">Такий документ видається на кожну партію продукції.</p>
+                    <p>Ваші покупці задля власної безпеки мають право ознайомитися з сертифікатами, тому ми надаємо нашим клієнтам все необхідне для легального та безпечного бізнесу</p>
+
+                </div>
+
+                <div class="slider placeholder-right"></div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </main>
