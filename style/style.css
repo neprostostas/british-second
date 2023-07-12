@@ -21,6 +21,7 @@
     --color-white: #FFFFFF;
     --color-navy: #DFE0CE;
     --color-grey: #C6C6C6;
+    --color-lightgrey: #F8F8F8;
     --color-orange: #F1AE2C;
     --color-black: #000000;
 }
@@ -52,6 +53,10 @@ hr.white {
 
 hr.orange {
     background-color: var(--color-orange);
+}
+
+hr.mobile {
+    display: none;
 }
 
 button, a {
@@ -271,7 +276,7 @@ header a {
     margin: 0 auto;
 }
 
-.season {
+header nav.catalog-content .season {
     margin: 20px 0;
     cursor: pointer;
     display: grid;
@@ -282,18 +287,18 @@ header a {
     border-left: 1px solid var(--color-black);
 }
 
-.season:hover {
+header nav.catalog-content .season:hover {
     background-color: #b68628;
     margin: 0;
     padding: 20px 0;
     border-left: none;
 }
 
-.season:first-child {
+header nav.catalog-content .season:first-child {
     border-left: none;
 }
 
-.season.no-border {
+header nav.catalog-content .season.no-border {
     border-left: none;
 }
 
@@ -346,12 +351,12 @@ header a {
         font-size: 18px;
     }
 
-    .season {
+    header nav.catalog-content .season {
         margin: 10px 0;
         gap: 15px;
     }
 
-    .season:hover {
+    header nav.catalog-content .season:hover {
         padding: 10px 0;
     }
 
@@ -429,7 +434,7 @@ header a {
 
 @media (max-width: 920px) {
 
-    .season, .bottom-section, .search-block, .phone-link, .phone-img, .logo-part, #site-search-mobile, .call-img {
+    header nav.catalog-content .season, .bottom-section, .search-block, .phone-link, .phone-img, .logo-part, #site-search-mobile, .call-img {
         display: none;
     }
 
@@ -1419,7 +1424,7 @@ hr.white.medium {
     background: rgba(165, 166, 150, 0.44);
 }
 
-.advantages-section .adv-container .label-block {
+.advantages-section .adv-container .label-block, .benefit-block .label-block {
     border-radius: 0 0 50px 50px;
     background: var(--color-orange);
     padding: 13px 135px;
@@ -1432,7 +1437,15 @@ hr.white.medium {
     margin-bottom: 47px;
 }
 
-.advantages-section .adv-container .label-block .comparison-block {
+.benefit-block .label-block {
+    grid-template-columns: auto;
+    margin-bottom: 0;
+    margin-top: 40px;
+    padding: 0;
+    gap: 10px;
+}
+
+.advantages-section .adv-container .label-block .comparison-block, .benefit-block .label-block .comparison-block {
     text-align: center;
     display: grid;
     gap: 5px;
@@ -1441,13 +1454,17 @@ hr.white.medium {
     justify-items: center;
 }
 
-.advantages-section .adv-container .label-block .comparison-block hr.grey {
+.benefit-block .label-block .comparison-block {
+    justify-content: space-between;
+}
+
+.advantages-section .adv-container .label-block .comparison-block hr.grey, .benefit-block .label-block .comparison-block hr.grey {
     height: 80px;
     width: 1px;
     background-color: var(--color-grey);
 }
 
-.advantages-section .adv-container .label-block .comparison-block p {
+.advantages-section .adv-container .label-block .comparison-block p, .benefit-block .label-block .comparison-block p {
     padding: 2px 0 6px;
 
     color: var(--color-black);
@@ -1457,7 +1474,7 @@ hr.white.medium {
     line-height: 120%;
 }
 
-.advantages-section .adv-container .label-block .comparison-block h3 {
+.advantages-section .adv-container .label-block .comparison-block h3, .benefit-block .label-block .comparison-block h3 {
     color: #020202;
     font-size: 18px;
     font-style: normal;
@@ -1465,22 +1482,31 @@ hr.white.medium {
     line-height: 120%;
 }
 
-.advantages-section .adv-container .label-block .comparison-block h3 span {
+.advantages-section .adv-container .label-block .comparison-block h3 span, .benefit-block .label-block .comparison-block h3 span {
     font-size: 32px;
     font-weight: 700;
 }
 
-.advantages-section .adv-container .label-block .comparison-block h3.white {
+.advantages-section .adv-container .label-block .comparison-block h3.white, .benefit-block .label-block .comparison-block h3.white {
     color: var(--color-white);
 }
 
-.advantages-section .adv-container .label-block h4 {
+.advantages-section .adv-container .label-block h4, .benefit-block .label-block h4 {
     text-align: center;
     color: var(--color-black);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
+}
+
+.benefit-block .label-block h4 {
+    text-align: left;
+    color: #020202;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
 }
 
 .advantages-section .adv-container .adv-block.four {
@@ -2135,10 +2161,6 @@ hr.white.medium {
     line-height: normal;
 }
 
-
-
-
-
 .decision-section .top-block {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -2253,7 +2275,7 @@ hr.white.medium {
 }
 
 .opens-section {
-    background: #F8F8F8;
+    background: var(--color-lightgrey);
     padding: 80px 25px 50px;
 }
 
@@ -2414,6 +2436,296 @@ hr.white.medium {
     width: 8px;
     height: 45px;
 }
+
+.categories-section {
+    padding: 75px 20px 55px;
+}
+
+.categories-section .top-line {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 20px;
+}
+
+.categories-section .top-line hr.black {
+    height: 10px;
+    width: 94px;
+}
+
+.categories-section .top-line hr.mobile {
+    display: none;
+}
+
+.categories-section p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.categories-section h2 {
+    color: var(--color-black);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.categories-section .seasons-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+.categories-section .seasons-wrap .season {
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width: 349px;
+    width: 100%;
+    height: 614px;
+
+    position: relative;
+}
+
+.categories-section .seasons-wrap .season.winter {
+    background-image: url("../assets/images/sort/winter.png");
+}
+
+.categories-section .seasons-wrap .season.spring {
+    background-image: url("../assets/images/sort/spring.png");
+}
+
+.categories-section .seasons-wrap .season.summer {
+    background-image: url("../assets/images/sort/summer.png");
+}
+
+.categories-section .seasons-wrap .season.autumn {
+    background-image: url("../assets/images/sort/autumn.png");
+}
+
+.categories-section .seasons-wrap .season .hover-wrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.6;
+    background: var(--color-black);
+    transition: .3s all ease-in-out;
+}
+
+.categories-section .seasons-wrap .season:hover .hover-wrap {
+    transition: .3s all ease-in-out;
+    background-color: transparent
+}
+
+.categories-section .seasons-wrap .season .hover-wrap span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transform: rotate(-180deg);
+    writing-mode:vertical-lr;
+
+    color: var(--color-white);
+    font-size: 106px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.categories-section .seasons-wrap .season:hover .hover-wrap span {
+    color: var(--color-black);
+}
+
+.categories-section .seasons-wrap .season .hover-wrap hr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94px;
+    height: 10px;
+    transition: .3s all ease-in-out;
+}
+
+.categories-section .seasons-wrap .season:hover .hover-wrap hr {
+    background-color: var(--color-black);
+    transition: .3s all ease-in-out;
+}
+
+.benefit-section .top-line {
+    margin: 0 45px 75px;
+}
+
+.benefit-section .top-line h2 {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.benefit-section .top-line p {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.benefit-section .benefit-block {
+    padding: 70px 75px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 55px;
+
+}
+
+.benefit-section .benefit-block.grey {
+    background-color: var(--color-lightgrey);
+
+}
+
+.benefit-section .benefit-block.orange {
+    background-color: var(--color-orange);
+    grid-template-columns: 1fr auto;
+}
+
+.benefit-section .benefit-block h3 {
+    color: var(--color-black);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.benefit-section .benefit-block.one h3 {
+    max-width: 490px;
+}
+
+.benefit-section .benefit-block.two h3 {
+    max-width: 375px;
+}
+
+.benefit-section .benefit-block.three h3 {
+    max-width: 540px;
+}
+
+.benefit-section .benefit-block .content-wrapper hr {
+    margin: 30px 0;
+    height: 1px;
+    width: 133px;
+}
+
+.benefit-section .benefit-block .image-wrapper {
+    max-width: 560px;
+    width: 100%;
+    position: relative;
+}
+
+.benefit-section .benefit-block .image-wrapper img {
+    width: 100%;
+}
+
+.benefit-section .benefit-block .image-wrapper hr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29px;
+    height: 126px;
+}
+
+.benefit-section .benefit-block.two .image-wrapper hr {
+    left: unset;
+    right: 0;
+}
+
+.benefit-section .benefit-block .content-wrapper p {
+    color: var(--color-black);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.benefit-section .benefit-block.one .content-wrapper p:first-of-type, .benefit-section .benefit-block.three .content-wrapper p {
+    padding-bottom: 30px;
+}
+
+.benefit-section .benefit-block .number-line {
+    padding: 30px 40px;
+    position: relative;
+    background: #F4F4F4;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.benefit-section .benefit-block .number-line .number {
+    padding: 13px 29px;
+    border-radius: 13px;
+    background: #D0D0D0;
+    color: var(--color-white);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.benefit-section .benefit-block .number-line:first-of-type {
+    margin-bottom: 5px;
+}
+
+.benefit-section .benefit-block .number-line hr {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 9px;
+    height: 34px;
+    margin: 0;
+}
+
+.benefit-section .benefit-block button.subscribe {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 18px 45px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 1px solid var(--color-black);
+    background: var(--color-bg);
+    color: var(--color-black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.benefit-section .main-line {
+    display: grid;
+    gap: 25px;
+}
+
+
 
 
 
@@ -2692,6 +3004,78 @@ hr.white.medium {
 
 @media (max-width: 920px) {
 
+    .benefit-section .benefit-block button.subscribe {
+        background-color: var(--color-orange);
+        border: none;
+    }
+
+    .benefit-section .benefit-block {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .benefit-section .padding-mobile {
+        padding: 30px 25px;
+    }
+
+    .benefit-section .top-line {
+        margin: 0 45px 45px;
+    }
+
+    .benefit-section .main-line {
+        gap: 20px;
+    }
+
+    .benefit-section .padding-mobile.grey {
+        background-color: #F8F8F8;
+    }
+
+    .benefit-section .padding-mobile.orange {
+        background-color: var(--color-orange);
+    }
+
+    .benefit-section .benefit-block.one {
+        background-image: url("../assets/images/sort/benefit-mobile-1.png");
+    }
+
+    .benefit-section .benefit-block.two {
+        background-image: url("../assets/images/sort/benefit-mobile-2.png");
+    }
+
+    .benefit-section .benefit-block.three {
+        background-image: url("../assets/images/sort/benefit-mobile-3.png");
+    }
+
+    .benefit-section .benefit-block .image-wrapper {
+        display: none;
+    }
+
+    .benefit-section .benefit-block {
+        padding: 70px 75px;
+        grid-template-columns: auto;
+        align-items: unset;
+        gap: unset;
+    }
+
+    .benefit-section .benefit-block h3 {
+        max-width: unset!important;
+    }
+
+    .categories-section h2 {
+        text-align: center;
+    }
+
+    .categories-section .top-line {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .categories-section .top-line hr {
+        width: 59px!important;
+        height: 1px!important;
+        background-color: var(--color-orange);
+    }
+
     .sorted-section .block-content {
         margin-top: 30px;
         grid-template-columns: auto;
@@ -2925,21 +3309,26 @@ hr.white.medium {
         transform: rotate(-47deg);
     }
 
-    .advantages-section .adv-container .label-block h4 {
+    .advantages-section .adv-container .label-block h4, .benefit-block .label-block h4 {
         font-size: 16px;
     }
 
-    .advantages-section .adv-container .label-block {
+    .advantages-section .adv-container .label-block, .benefit-block .label-block {
         background-color: var(--color-navy);
         grid-template-columns: auto;
         padding: 13px 50px;
+    }
+
+    .benefit-block .label-block {
+        opacity: 0.8;
+        background: var(--color-white);
     }
 
     .advantages-section .adv-container .adv-block h4 {
         font-size: 32px;
     }
 
-    .advantages-section .adv-container .label-block .comparison-block h3.white {
+    .advantages-section .adv-container .label-block .comparison-block h3.white, .benefit-block .label-block .comparison-block h3.white {
         color: var(--color-orange);
     }
 
@@ -3107,6 +3496,10 @@ hr.white.medium {
         box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.25);
     }
 
+    hr.mobile {
+        display: unset!important;
+    }
+
 }
 
 @media (max-width: 895px) {
@@ -3260,7 +3653,33 @@ hr.white.medium {
 
 }
 
+@media (max-width: 670px) {
+    .categories-section h2 {
+        text-align: center;
+        font-size: 34px;
+        margin: 0 auto;
+        max-width: 330px;
+    }
+}
+
 @media (max-width: 600px) {
+
+    .benefit-section .benefit-block h3 {
+        font-size: 30px;
+    }
+
+    .benefit-section .benefit-block {
+        padding: 30px 25px;
+    }
+
+    .benefit-section .top-line h2 {
+        font-size: 45px;
+        padding-bottom: 10px;
+    }
+
+    .benefit-section .top-line p {
+        font-size: 18px;
+    }
 
     .concurrent-section .concurrent-wrap .concurrent-block .bg-mobile-wrap {
         padding: 30px 20px;
@@ -3316,6 +3735,14 @@ hr.white.medium {
 
 @media (max-width: 550px) {
 
+    .categories-section .seasons-wrap .season .hover-wrap hr {
+        width: 44px;
+    }
+
+    .categories-section .seasons-wrap .season .hover-wrap span {
+        font-size: 64px;
+    }
+
     .decision-section .top-block hr {
         width: 50px;
     }
@@ -3353,6 +3780,22 @@ hr.white.medium {
 
     .viber-block {
         padding: 105px 35px;
+    }
+
+}
+
+@media (max-width: 530px) {
+
+    .categories-section h2 {
+        font-size: 27px;
+        max-width: 265px;
+    }
+
+    .categories-section p {
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--color-black);
+        font-size: 20px;
     }
 
 }
@@ -3422,6 +3865,10 @@ hr.white.medium {
 
 @media (max-width: 455px) {
 
+    .categories-section h2 {
+        max-width: unset;
+    }
+
     .cooperation-section button.more {
         padding: 12px 40px;
     }
@@ -3433,6 +3880,19 @@ hr.white.medium {
 }
 
 @media (max-width: 440px) {
+
+    .benefit-block .label-block {
+        padding: 13px;
+    }
+
+    .benefit-section .benefit-block button.subscribe {
+        padding: 18px 25px;
+    }
+
+    .benefit-section .benefit-block .number-line .number {
+        padding: 5px 15px;
+        font-size: 25px;
+    }
 
     .decision-section .button-line {
         margin: 40px;
@@ -3475,6 +3935,10 @@ hr.white.medium {
 }
 
 @media (max-width: 430px) {
+
+    .categories-section .seasons-wrap .season .hover-wrap span {
+        font-size: 50px;
+    }
 
     .sorted-section {
         padding: 0 25px 25px;

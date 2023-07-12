@@ -7,7 +7,7 @@ $(document).ready(function() {
             $(this).next().removeClass("no-border");
         }
     );
-    $(".season").hover(
+    $("header nav.catalog-content .season").hover(
         function() {
             $(this).next().addClass("no-border");
         },
