@@ -38,6 +38,11 @@ html {
     background-color: var(--color-bg);
 }
 
+html.no-scroll {
+    overflow: hidden;
+    height: 100%;
+}
+
 hr {
     border: none;
     margin: 0;
@@ -90,12 +95,193 @@ header a {
     margin: 0 auto;
 }
 
+/* MODAL */
 
+.modal-form {
+    display: none;
+}
 
+.modal-form.active {
+    display: unset;
+}
 
+.modal-form-close {
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background: var(--color-black);
+}
 
+.modal-form-content {
+    z-index: 999;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 70px 75px 55px;
+    width: 760px;
 
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.70);
+    backdrop-filter: blur(15px);
+}
 
+.modal-form .close-modal {
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+}
+
+.modal-form .top-line {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.modal-form h2 {
+    margin-left: 50px;
+    text-align: center;
+    color: var(--color-white);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 129.682%;
+}
+
+form.modal-form :is(input, textarea) {
+    width: -webkit-fill-available;
+    border: none;
+    padding: 15px 45px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.70);
+    color: #DBDBDB;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 129.682%;
+}
+
+form.modal-form :is(input, textarea):focus {
+    background: var(--color-orange);
+    color: var(--color-black);
+    outline: none;
+}
+
+form.modal-form input {
+    margin-bottom: 45px;
+}
+
+form.modal-form textarea {
+    margin-bottom: 75px;
+}
+
+form.modal-form button.send {
+    display: block;
+    border-radius: 10px;
+    background: var(--color-orange);
+    text-align: center;
+    color: var(--color-white);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    padding: 12px 80px;
+    margin: 0 auto;
+    width: 300px;
+}
+
+@media (max-width: 1000px) {
+
+    .modal-form-content {
+        width: 600px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    form.modal-form button.send {
+        font-size: 20px;
+        width: 260px;
+    }
+
+    form.modal-form :is(input, textarea) {
+        font-size: 20px;
+    }
+
+    .modal-form .close-modal {
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal-form-content {
+        width: 480px;
+    }
+
+    .modal-form h2 {
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    .modal-form h2 {
+        margin-left: 10px;
+    }
+
+    .modal-form-content {
+        width: 370px;
+    }
+
+    form.modal-form input {
+        margin-bottom: 15px;
+    }
+
+    form.modal-form textarea {
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width: 550px) {
+
+    .modal-form-content {
+        padding: 45px;
+    }
+
+    .modal-form-content {
+        width: 260px;
+    }
+
+    .modal-form h2 {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    form.modal-form :is(input, textarea) {
+        font-size: 16px;
+    }
+
+    form.modal-form button.send {
+        font-size: 18px;
+        width: unset;
+    }
+
+    .modal-form .close-modal {
+        width: 20px;
+        height: 20px;
+    }
+
+}
 
 /* HEADER */
 
@@ -104,7 +290,7 @@ header a {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 999;
+    z-index: 997;
 }
 
 .info-container {
@@ -3350,9 +3536,6 @@ hr.white.medium {
     gap: 30px;
 }
 
-
-
-
 .business-section .block1 {
     margin: 15px 0 25px;
 
@@ -3967,6 +4150,11 @@ form.contacts-form button.contact {
 .storage-section .top-line hr {
     height: 2px;
 }
+
+
+
+
+
 
 
 
@@ -5851,6 +6039,14 @@ hr.mobile {
 }
 
 @media (max-width: 415px) {
+
+    .hero-text.contacts {
+        top: 65%;
+    }
+
+    .hero-image.contacts {
+     height: calc(120vh + 27px);
+    }
 
     .original-page .benefit-section button.choose-item {
         padding: 18px 20px;

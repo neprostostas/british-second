@@ -22,19 +22,20 @@
 
                 </div>
 
+
                 <form class="contacts-form">
 
                     <div class="name-field">
                         <label for="name"></label>
-                        <input required placeholder="ВАШЕ ІМ'Я" type="text" id="name" name="name" minlength="2">
+                        <input placeholder="ВАШЕ ІМ'Я" type="text" id="name" name="name" minlength="2">
                     </div>
 
                     <div class="number-field">
                         <label for="number"></label>
-                        <input required placeholder="ВАШ НОМЕР ТЕЛЕФОНУ" type="number" id="number" name="number" min="10" max="100">
+                        <input placeholder="ВАШ НОМЕР ТЕЛЕФОНУ" type="number" id="number" name="number" min="10" max="100">
                     </div>
 
-                    <button class="contact" type="submit" value="Submit">
+                    <button class="contact" type="submit" value="Submit" onclick="return false;">
                         <span>Замовити дзвінок</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="11" viewBox="0 0 41 11" fill="none">
                             <path d="M0.545898 5.47296H39.7561M39.7561 5.47296L35.9493 0.405396M39.7561 5.47296L35.9493 10.5405" stroke="black"/>

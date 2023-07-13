@@ -34,6 +34,37 @@ $(document).ready(function() {
         }
     });
 
+    $('.contacts-form button.contact').click(function() {
+        $('.modal-form').addClass('active');
+        $(document.documentElement).addClass('no-scroll');
+    });
+
+    $('.modal-form .close-modal').click(function() {
+        $('.modal-form').removeClass('active');
+        $(document.documentElement).removeClass('no-scroll');
+    });
+
+    $('.modal-form-close').click(function() {
+        $('.modal-form').removeClass('active');
+        $(document.documentElement).removeClass('no-scroll');
+    });
+
+
+    // When the user scrolls down 50px from the top of the document, easily-animated remove middleSection
+    let prevScrollTop = $(window).scrollTop();
+
+    $(window).scroll(function() {
+        const currentScrollTop = $(this).scrollTop();
+
+        if (currentScrollTop < prevScrollTop) {
+            $('.catalog-container').slideDown(200);
+        } else {
+            $('.catalog-container').slideUp(200);
+        }
+
+        prevScrollTop = currentScrollTop;
+    });
+
 });
 
 
@@ -68,3 +99,8 @@ const swiper = new Swiper('.swiper', {
     }
 
 });
+
+
+
+
+

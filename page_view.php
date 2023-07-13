@@ -13,18 +13,21 @@
     <link rel="stylesheet" href="<?= SERVER_URL ?>style/style.css">
 </head>
 <body>
+
 	<?php
-    require "@commons/header.php";
-    $file_name = $request_uri ?? 'main';
-    $file_path = "@pages/{$file_name}.php";
-    if(file_exists($file_path)) {
-        require_once $file_path;
-    }
-    else {
-        require_once "@pages/404.php";
-    }
-    require "@commons/footer.php";
+        require "@commons/header.php";
+        $file_name = $request_uri ?? 'main';
+        $file_path = "@pages/{$file_name}.php";
+        if(file_exists($file_path)) {
+            require_once $file_path;
+        }
+        else {
+            require_once "@pages/404.php";
+        }
+        require "@commons/footer.php";
     ?>
+
+    <?php require "@commons/modal.php"; ?>
 
     <script src="<?= SERVER_URL ?>js/main.js"></script>
 </body>
