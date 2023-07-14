@@ -65,6 +65,34 @@ $(document).ready(function() {
         prevScrollTop = currentScrollTop;
     });
 
+
+    $('.filters-block .custom-select .top-part').on('click', function() {
+        const $customSelect = $(this).closest('.custom-select');
+        const $customOptions = $customSelect.find('.custom-options');
+        const $topPart = $customSelect.find('.top-part');
+        const $svg = $topPart.find('svg');
+
+        if ($customOptions.is(':visible')) {
+            $customOptions.slideUp(200);
+            $topPart.css('border-bottom', 'unset');
+            $svg.animate({ deg: 90 }, {
+                duration: 200,
+                step: function(now) {
+                    $svg.css('transform', 'rotate(' + now + 'deg)');
+                }
+            });
+        } else {
+            $customOptions.slideDown(200);
+            $topPart.css('border-bottom', '1px solid var(--color-orange)');
+            $svg.animate({ deg: 0 }, {
+                duration: 200,
+                step: function(now) {
+                    $svg.css('transform', 'rotate(' + now + 'deg)');
+                }
+            });
+        }
+    });
+
 });
 
 

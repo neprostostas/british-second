@@ -20,7 +20,7 @@
     --color-bg: #FCFCFC;
     --color-white: #FFFFFF;
     --color-navy: #DFE0CE;
-    --color-grey: #C6C6C6;
+    --color-grey: rgba(198, 198, 198, 0.3);
     --color-lightgrey: #F8F8F8;
     --color-orange: #F1AE2C;
     --color-black: #000000;
@@ -3341,11 +3341,19 @@ hr.white.medium {
     gap: 32px;
 }
 
-.sell-section .sell-wrap .sell-box .image-bg {
+.sell-section .sell-wrap .sell-box .image-bg, .sort-section .sell-box .image-bg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 323px;
+}
+
+.sort-section .sell-box:nth-child(odd) .image-bg {
+    background-image: url("../assets/images/categories/sell-1.png");
+}
+
+.sort-section .sell-box:nth-child(even) .image-bg {
+    background-image: url("../assets/images/categories/sell-2.png");
 }
 
 .sell-section .sell-wrap .sell-box.one .image-bg {
@@ -3364,14 +3372,14 @@ hr.white.medium {
     background-image: url("../assets/images/original/sell-4.png");
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap {
+.sell-section .sell-wrap .sell-box .content-wrap, .sort-section .sell-box .content-wrap {
     position: relative;
     padding: 33px 26px;
     background: #F8F8F8;
     height: 344px;
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block, .sort-section .sell-box .content-wrap .content-block {
     padding: 32px 24px;
     background: #FFF;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
@@ -3419,13 +3427,13 @@ hr.white.medium {
     right: 0;
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block hr.bot {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block hr.bot, .sort-section .sell-box .content-wrap .content-block hr.bot {
     width: 77px;
     height: 1px;
     margin: 0 auto;
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block h4 {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block h4, .sort-section .sell-box .content-wrap .content-block h4 {
     text-align: center;
     color: var(--color-orange);
     font-size: 48px;
@@ -3435,7 +3443,7 @@ hr.white.medium {
     padding-bottom: 14px;
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block h4 span {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block h4 span, .sort-section .sell-box .content-wrap .content-block h4 span {
     color: var(--color-black);
     font-size: 31px;
     font-style: normal;
@@ -3447,7 +3455,7 @@ hr.white.medium {
     padding: 18px 0 22px;
 }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block button.specify {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block button.specify, .sort-section .sell-box .content-wrap .content-block button.specify {
     display: grid;
     margin: 0 auto;
     grid-template-columns: repeat(2, auto);
@@ -3465,27 +3473,27 @@ hr.white.medium {
     line-height: normal;
 }
 
-.sell-section .sell-wrap .sell-box {
+.sell-section .sell-wrap .sell-box, .sort-section .sell-box {
     cursor: pointer;
 }
 
-.sell-section .sell-wrap .sell-box:hover .image-bg {
+.sell-section .sell-wrap .sell-box:hover .image-bg, .sort-section .sell-box:hover .image-bg {
     opacity: .8;
 }
 
-.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block hr:is(.top, .bot) {
+.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block hr:is(.top, .bot), .sort-section .sell-box:hover .content-wrap .content-block hr:is(.top, .bot) {
     background-color: var(--color-white);
 }
 
-.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block {
+.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block, .sort-section .sell-box:hover .content-wrap .content-block {
     background-color: var(--color-orange);
 }
 
-.sell-section .sell-wrap .sell-box:hover p:not(.grey) {
+.sell-section .sell-wrap .sell-box:hover p:not(.grey), .sort-section .sell-box:hover p:not(.grey) {
     color: var(--color-white);
 }
 
-.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block :is(h3, h4, h4 span) {
+.sell-section .sell-wrap .sell-box:hover .content-wrap .content-block :is(h3, h4, h4 span), .sort-section .sell-box:hover .content-wrap .content-block :is(h3, h4, h4 span) {
     color: var(--color-white);
 }
 
@@ -4578,15 +4586,201 @@ form.contacts-form button.contact {
     margin: 0 45px;
 }
 
+.sort-section {
+    margin: 250px 30px 45px;
+}
 
+.sort-section .top-line {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
 
+.sort-section .top-line h2 {
+    color: var(--color-black);
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
 
+.sort-section .top-line hr {
+    width: 100%;
+    height: 1px;
+}
 
+.sort-section .category-content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 65px;
+    align-items: start;
+}
 
+.sort-section .category-content .products-block .sell-wrap {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 32px;
+}
 
+.sort-section .sell-box .image-bg {
+    width: 219px;
+    height: 216px;
+}
 
+.sort-section .sell-box .content-wrap .content-block {
+    height: unset;
+    display: block;
+    margin: 33px 17px;
+}
 
+.sort-section .sell-box .content-wrap .content-block h3 {
+    text-align: center;
+    color: var(--color-black);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    padding-bottom: 10px;
+}
 
+.sort-section .sell-box .content-wrap .content-block .label {
+    position: absolute;
+    top: -27px;
+    right: 0;
+
+    padding: 5px 20px;
+    background-color: var(--color-orange);
+    color: var(--color-white);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 123%;
+    letter-spacing: 4px;
+}
+
+.sort-section .sell-box .content-wrap .content-block hr.bot + p {
+    padding: 7px 0 17px;
+}
+
+.sort-section .sell-box .content-wrap .content-block p {
+    color: var(--color-black);
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.sort-section .sell-box .content-wrap .content-block {
+    padding: 15px 17px 22px;
+}
+
+.sort-section .sell-box .content-wrap .content-block button.specify {
+    font-size: 14px;
+}
+
+.sort-section .sell-box .content-wrap .content-block h4 {
+    font-size: 32px;
+}
+
+.sort-section .sell-box:hover .content-wrap .content-block .label {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.sort-section .sell-box .content-wrap {
+    height: 115px;
+}
+
+.sort-section .filters-block .top-part {
+    padding: 15px 10px;
+    border-top: 1px solid var(--color-orange);
+    border-bottom: 1px solid var(--color-orange);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-section .filters-block .top-part h2 {
+    color: var(--color-black);
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.sort-section .filters-block .custom-options {
+    padding: 25px 0;
+}
+
+.sort-section .filters-block .custom-select:last-of-type .custom-options:last-of-type {
+    border-bottom: 1px solid var(--color-orange);
+}
+
+.sort-section .filters-block .custom-options label {
+    color: var(--color-black);
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 20px;
+}
+
+.sort-section .filters-block .custom-options .line:last-of-type label {
+    padding-bottom: 0;
+}
+
+.sort-section .filters-block .custom-options input[type="checkbox"] {
+    width: 32px;
+    height: 33px;
+    border-radius: 5px;
+    background: var(--color-white);
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.40);
+    accent-color: var(--color-orange);
+}
+
+.sort-section .filters-block {
+    width: 280px;
+}
+
+.sort-section .filters-block .custom-select {
+    cursor: pointer;
+}
+
+.sort-section .filters-block .custom-select:hover .top-part {
+    background-color: var(--color-grey);
+}
+
+.sort-section .products-block button.see-more {
+    color: var(--color-black);
+    padding: 18px 45px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    gap: 20px;
+
+    background-color: transparent;
+    border: 1px solid var(--color-orange);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.sort-section .products-block .margin {
+    margin: 35px 0;
+}
 
 
 
@@ -4688,6 +4882,10 @@ form.contacts-form button.contact {
 }
 
 @media (max-width: 1430px) {
+
+    .sort-section .category-content .products-block .sell-wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .blog-header-container {
         top: 170px;
@@ -4942,6 +5140,10 @@ hr.white.medium {
 
 @media (max-width: 1125px) {
 
+    .sort-section .category-content .products-block .sell-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .business-section .block2 .line-text p {
         max-width: 680px;
     }
@@ -5144,6 +5346,15 @@ hr.white.medium {
 }
 
 @media (max-width: 920px) {
+
+    .sort-section {
+        margin: 120px 30px 45px;
+    }
+
+    .sort-section .category-content {
+        grid-template-columns: auto;
+        justify-items: center;
+    }
 
     .essay-section .content-line .sticky-part .scroll-part {
         margin: 0 auto;
@@ -6475,6 +6686,10 @@ hr.mobile {
 
 @media (max-width: 530px) {
 
+    .sort-section .category-content .products-block .sell-wrap {
+        grid-template-columns: 1fr;
+    }
+
     .business-section .block1 .right-part h4 {
         font-size: 50px;
     }
@@ -6735,7 +6950,7 @@ hr.mobile {
         font-size: 95px;
     }
 
-.sell-section .sell-wrap .sell-box .content-wrap .content-block button.specify {
+.sell-section .sell-wrap .sell-box .content-wrap .content-block button.specify, .sort-section .sell-box .content-wrap .content-block button.specify {
     gap: 10px;
     padding: 10px;
 }
